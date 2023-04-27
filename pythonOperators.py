@@ -218,8 +218,8 @@ bitwise AND (&) - sets each bit to 1 if both bits are 1.
 bitwise OR (|) - sets each bit to 1 if one of the bits is 1.
 bitwise XOR (^) - sets each bit to 1 if only one of the bits is 1.
 bitwise NOT (~) - Inverts all bits.
-Left Shift (<<) - shift left by pushing in zeroes from the right and let the leftmost bits fell off.
-Right Shift (>>) - shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bit fall off
+left Shift (<<) - shift left by pushing in zeroes from the right and let the leftmost bits fell off.
+right Shift (>>) - shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bit fall off
 """
 
 # Bitwise Operators:
