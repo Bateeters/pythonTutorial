@@ -1,5 +1,5 @@
 """
-collections in python are basically container data types:
+Collections in python are basically container data types:
 - lists
 - tuples
 - sets
