@@ -10,7 +10,7 @@ Arrays only take a single data type value, lists store any data type value.
 This means the operations performed on them are different.
 """
 
-# to use arrays in python, you need to import the module
+# To use arrays in python, you need to import the module
 
 # 3 different ways of importing array:
 # import array (without alias)
