@@ -131,3 +131,11 @@ file.close()
 file = open("exampleFileHandling/newfile.txt", "x")
 file.write("New file")
 file.close()
+
+
+# Deleting a file:
+# import os is needed for this.
+# os.remove("<filename>")
+
+# can also be used to remove a folder,
+# os.rmdir("<folder>")
