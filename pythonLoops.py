@@ -185,6 +185,7 @@ for a in range(1, n+1):  # for numbers in range of 1 to user input+1 (+1 makes r
 """
 
 
+"""
 # for loop inside while loop
 # bulk reservation example ----------------------------------------
 
@@ -200,3 +201,74 @@ while travelling == 'yes':  # if user input is yes
     # once it finishes (runs 4 times) ask if they need to add another person.
     # if not yes, end program.
     travelling = input("Oops! forgot someone? (yes/no): ")
+"""
+
+# for loop inside for loop
+# pyramid pattern example --------------------------------------------
+
+
+def pattern(n):
+    k = 2 * n - 2
+    for i in range(0, n):
+        for j in range(0, k):
+            print(end=" ")
+        k = k-1
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+
+
+pattern(5)
+print("\n")
+
+
+def pattern(n):
+    k = n-2
+    for i in range(n, -1, -1):
+        for j in range(k, -1, -1):
+            print(end=" ")
+        k = k+1
+        for j in range(0, i):
+            print("* ", end="")
+        print("\r")
+
+
+pattern(5)
+
+
+# right start pattern --------------------------------
+def pattern(n):
+    for i in range(0, n):
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+    for i in range(n, -1, -1):
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+
+
+pattern(5)
+
+
+# left start pattern ------------------------------------
+def pattern(n):
+    k = 2*n-2
+    for i in range(0, n-1):
+        for j in range(0, k):
+            print(end=" ")
+        k = k-2
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+    k = -1
+    for i in range(n-1, -1, -1):
+        for j in range(k, -1, -1):
+            print(end=" ")
+        k = k+2
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+
+
+pattern(5)
